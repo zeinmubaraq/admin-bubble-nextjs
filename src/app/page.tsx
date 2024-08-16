@@ -8,11 +8,12 @@ import DashboardProductItem from './_components/dashboard-product-item';
 import DashboardCardTitle from './_components/dashboard-card-title';
 import TableHead from './_components/table-head';
 import TableItem from './_components/table-item';
+import StatusBadge from './_components/status-badge';
 
 export default function Home() {
   return (
     <main className="mt-4 grid grid-cols-3 gap-4">
-      <div className="col-span-2 grid h-screen grid-cols-2 gap-4">
+      <div className="col-span-2 grid min-h-screen grid-cols-2 gap-4">
         <div className="col-span-2 rounded-lg bg-white p-4 shadow-sm">1</div>
         <div className="col-span-1 h-40 rounded-lg bg-white p-4 shadow-sm">3</div>
         <div className="relative col-span-1 h-40 rounded-lg bg-white p-4 shadow-sm">
@@ -49,21 +50,21 @@ export default function Home() {
                   <TableItem>
                     <div className="flex items-center gap-x-3">
                       <Image
-                        src="/profile.png"
+                        src="/shoes-4.png"
                         alt="Profile Logo"
                         className="h-10 w-10"
                         width={100}
                         height={100}
                       />
-                      Barhat Blue
+                      Lunar Roam
                     </div>
                   </TableItem>
                   <TableItem>May 5</TableItem>
                   <TableItem>
-                    <span>Received</span>
+                    <StatusBadge status="received" />
                   </TableItem>
                   <TableItem>$359.90</TableItem>
-                  <TableItem>M-Starlight</TableItem>
+                  <TableItem>Miguel H</TableItem>
                 </tr>
 
                 <tr className="border-t">
@@ -71,21 +72,21 @@ export default function Home() {
                   <TableItem>
                     <div className="flex items-center gap-x-3">
                       <Image
-                        src="/profile.png"
+                        src="/shoes-6.jpeg"
                         alt="Profile Logo"
                         className="h-10 w-10"
                         width={100}
                         height={100}
                       />
-                      Barhat Blue
+                      Reactx Infinity Run 4
                     </div>
                   </TableItem>
-                  <TableItem>May 5</TableItem>
+                  <TableItem>May 10</TableItem>
                   <TableItem>
-                    <span>Received</span>
+                    <StatusBadge status="received" />
                   </TableItem>
-                  <TableItem>$359.90</TableItem>
-                  <TableItem>M-Starlight</TableItem>
+                  <TableItem>$329.40</TableItem>
+                  <TableItem>Alexandro J</TableItem>
                 </tr>
 
                 <tr className="border-t">
@@ -93,21 +94,21 @@ export default function Home() {
                   <TableItem>
                     <div className="flex items-center gap-x-3">
                       <Image
-                        src="/profile.png"
+                        src="/shoes-7.jpeg"
                         alt="Profile Logo"
                         className="h-10 w-10"
                         width={100}
                         height={100}
                       />
-                      Barhat Blue
+                      Reactx Pegasus Trail 5
                     </div>
                   </TableItem>
-                  <TableItem>May 5</TableItem>
+                  <TableItem>May 18</TableItem>
                   <TableItem>
-                    <span>Received</span>
+                    <StatusBadge status="received" />
                   </TableItem>
-                  <TableItem>$359.90</TableItem>
-                  <TableItem>M-Starlight</TableItem>
+                  <TableItem>$269.20</TableItem>
+                  <TableItem>Bartosz R</TableItem>
                 </tr>
 
                 <tr className="border-t">
@@ -115,21 +116,21 @@ export default function Home() {
                   <TableItem>
                     <div className="flex items-center gap-x-3">
                       <Image
-                        src="/profile.png"
+                        src="/shoes-8.png"
                         alt="Profile Logo"
                         className="h-10 w-10"
                         width={100}
                         height={100}
                       />
-                      Barhat Blue
+                      Zoom X Streak Fly
                     </div>
                   </TableItem>
-                  <TableItem>May 5</TableItem>
+                  <TableItem>May 20</TableItem>
                   <TableItem>
-                    <span>Received</span>
+                    <StatusBadge status="pending" />
                   </TableItem>
-                  <TableItem>$359.90</TableItem>
-                  <TableItem>M-Starlight</TableItem>
+                  <TableItem>$313.40</TableItem>
+                  <TableItem>D Rifera</TableItem>
                 </tr>
 
                 <tr className="border-t">
@@ -137,21 +138,21 @@ export default function Home() {
                   <TableItem>
                     <div className="flex items-center gap-x-3">
                       <Image
-                        src="/profile.png"
+                        src="/shoes-9.jpeg"
                         alt="Profile Logo"
                         className="h-10 w-10"
                         width={100}
                         height={100}
                       />
-                      Barhat Blue
+                      Pegasus Plus
                     </div>
                   </TableItem>
-                  <TableItem>May 5</TableItem>
+                  <TableItem>May 23</TableItem>
                   <TableItem>
-                    <span>Received</span>
+                    <StatusBadge status="pending" />
                   </TableItem>
-                  <TableItem>$359.90</TableItem>
-                  <TableItem>M-Starlight</TableItem>
+                  <TableItem>$379.30</TableItem>
+                  <TableItem>R Bartolini</TableItem>
                 </tr>
               </tbody>
             </table>
@@ -165,10 +166,30 @@ export default function Home() {
             <EllipsisHorizontalIcon className="h-6 w-6" />
           </div>
           <div className="mt-3.5 space-y-1">
-            <DashboardProductItem name="Emerald Velvet" sold="912" price="$ 355.90" />
-            <DashboardProductItem name="Velvet Coral" sold="804" price="$ 279.00" />
-            <DashboardProductItem name="Rotterdam" sold="738" price="$ 329.95" />
-            <DashboardProductItem name="Happy Yellow" sold="684" price="$ 315.50" />
+            <DashboardProductItem
+              image="/shoes-1.png"
+              name="Airmax DN SE"
+              sold="912"
+              price="$ 355.90"
+            />
+            <DashboardProductItem
+              image="/shoes-2.png"
+              name="Infinity RN4 FP"
+              sold="804"
+              price="$ 279.00"
+            />
+            <DashboardProductItem
+              image="/shoes-3.jpeg"
+              name="Journey Run"
+              sold="738"
+              price="$ 329.95"
+            />
+            <DashboardProductItem
+              image="/shoes-4.png"
+              name="Lunar Roam"
+              sold="684"
+              price="$ 315.50"
+            />
           </div>
         </div>
         <div className="rounded-lg bg-white shadow-sm">5</div>
