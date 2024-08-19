@@ -25,7 +25,7 @@ export default function Navbar() {
         </button>
         <div className="flex items-center gap-x-2">
           <Image
-            src="/profile.png"
+            src="/people-3.jpg"
             alt="Profile Logo"
             className="h-8 w-8 rounded-lg"
             width={100}
